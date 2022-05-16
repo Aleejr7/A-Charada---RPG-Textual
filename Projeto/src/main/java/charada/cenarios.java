@@ -88,4 +88,47 @@ public class cenarios {
         }
 
     }
+    static void predio1 (String[] args){
+        System.out.println("Esse espaço você deve conheer bem");
+        System.out.println("Aqui é o espaço dos laboratórios, no qual temos nossas aulas");
+        System.out.println("Temos o Corredor C e o E ");
+        
+        // Buscar mais informações para completar esse ambiente
+    }
+    
+    static void centroEsportivo (String[] args) {
+        System.out.println("Esse aqui é o nosso Centro Esportivo");
+        System.out.println("É aqui que você pode vir praticar algumas atividades físicas");
+        System.out.println("E até se tornar um atleta do SENAC");
+        System.out.println("A nossa direita temos a academia onde você pode manter sua forma física");
+        System.out.println("E a esquerda temos algumas quadras de futebol, basquetebol, voleibol");
+        //System.out.println("Bem, e ali no fundo temos uma, oxii, uma capivara kkkkk");
+        System.out.println("Esse é o nosso centro esportivo, espero por você na quadra");
+        System.out.println("Até mais");
+        
+    }
+    
+    static void lanchonete (String[] args){
+        Scanner input = new Scanner (System.in);
+        System.out.println("Bem vindo a lanchonete");
+        System.out.println("Aqui é onde você vai comer seu lanchinho");
+        System.out.println("Aqui támbem temos alguns jogos: Tênis de Mesa; Pebolim");
+        System.out.println("Vamos jogar ?");
+        System.out.println("1-para jogar\n2-Não jogar");
+        int resposta = input.nextInt();
+        
+        if(resposta <= 1 && resposta > 0){
+            System.out.println("Você é um bom adversário");
+            System.out.println("Uou bom saque");
+            System.out.println("Você estar se saindo bem para uma primeira vez");
+            System.out.println("Você se saiu muito bem, em troca vou te dar uma dica preciosa");
+            System.out.println(/*dica para resolver uma charada*/);
+        
+    }
+        else{
+            System.out.println("Você pode jogar a qualquer momento, basta dar uma passadinha aqui");
+        }
+        System.out.println("Muito bem. Sempre que estiver com fome você sabeonde ir :)");
+    }
+    
 }
