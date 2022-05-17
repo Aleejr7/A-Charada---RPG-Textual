@@ -6,7 +6,7 @@ package charada;
 import java.util.Scanner;
 
 public class cenarios {
-
+    
     static void entrada() {
         System.out.println("Você está na entrada do Senac, esta é vista 360º do local");
         System.out.println("\nA sua direita você tem o Estacionamento e uma grande árvore, com alguns bancos embaixo");
@@ -19,11 +19,11 @@ public class cenarios {
     
     static void biblioteca(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Bem vindo a Bliblioteca, bom estudos");
-        System.out.println("Descrição da bliblioteca :");
+        System.out.println("Bem vindo a Biblioteca, bom estudos");
+        System.out.println("Descrição da biblioteca :");
         System.out.println("Na entrada temos a obra 'GINASTA SENTADO'");
         System.out.println("sicronizar com o GINASTA SENTADO?");
-        System.out.println("Caso desejese sicronizar digite: 1\nCaso não desejese digite qualquer outro número\n");
+        System.out.println("Caso deseje sicronizar digite: 1\nCaso não desejese digite qualquer outro número\n");
         int resposta1 = input.nextInt();
 
         if (resposta1 <= 1 && resposta1 > 0) {
