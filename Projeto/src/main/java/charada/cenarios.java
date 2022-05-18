@@ -30,11 +30,11 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
 
     static void biblioteca(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Bem vindo a Biblioteca, bom estudos");
-        System.out.println("-------------Descrição da biblioteca-------------:");
-        System.out.println("Na entrada temos a obra 'GINASTA SENTADO'");
-        System.out.println("Uma obra produzida em 2006 pelo Autor Veríssimo");
-        System.out.println("A obra 'GINASTA SENATADO' consiste basicamente em um homem sentado e ao seu lado alguns livros.");
+        System.out.println("Bem vindo a Biblioteca, bom estudos \n");
+        System.out.println("-------------Descrição da biblioteca------------- \n");
+        System.out.println("Na entrada temos a obra 'GINASTA SENTADO'\n");
+        System.out.println("Uma obra produzida em 2006 pelo Autor Veríssimo \n");
+        System.out.println("A obra 'GINASTA SENATADO' consiste basicamente em um homem sentado e ao seu lado alguns livros. \n");
         System.out.println("sicronizar com o GINASTA SENTADO?");
         System.out.println("Caso deseja sicronizar digite: 1\nCaso não deseja digite qualquer outro número\n");
         int resposta1 = input.nextInt();
@@ -104,31 +104,69 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
 
     static void predio1(String[] args) {
  int resposta1;
+        int resposta2;
         Scanner entrada = new Scanner(System.in);
-        System.out.println("Esse espaço você deve conheer bem");
-        System.out.println("Aqui é o espaço dos laboratórios, no qual temos nossas aulas");
-        System.out.println("Temos o Corredor A e o Corredor C ");
+        System.out.println("Esse espaço você deve conheer bem\n");
+        System.out.println("Aqui é o espaço dos laboratórios, no qual temos nossas aulas\n");
+        System.out.println("Temos o Corredor A e o Corredor C \n");
+
         do {
             System.out.println("Qual corredor você deseja ir ?\n1 - Para corredor A\n2 - Para corredor C");
             resposta1 = lerEntradaInt(entrada);
 
             switch (resposta1) {
                 case 1:
-                    System.out.println(/*Descrever corredor A*/);
+                    System.out.println("Bom este é o corredor A");
+                    System.out.println("Aqui temos diversas salas de aula diariament");
+                    System.out.println("Temos também a NASA ao lado, aposto que você conhece bem \n");
+                    System.out.println("Olha só que legal, temos nas paredes diversos quadros, pinturas e desenhos. Isso deixa o ambiente mais atrativo não é mesmo? \n");
+                    System.out.println("Por enquanto é so. Não se esqueça de dar uma passadinha no corredor C, pode ter algo mais interessante por lá");
                     break;
+
                 case 2:
-                    System.out.println(/*Descrever corredor B*/);
+                    System.out.println("Bem vindo, esse é o corredor C \n");
+                    System.out.println("Aqui no inicio temos alguns laboratório de TI, com diversos computadores e muito mais \n");
+                    System.out.println("Já para o final, temos alguns laboratórios de Quimica, aqui acontece uma parada sinistra ás vezes (): \n");
+                    System.out.println("Nas paredes temos alguns quadros, para deixar o ambiente mais agradável \n");
+                    System.out.println("Dar uma olhada nesse \n");
+                    System.out.println("Sicronizar com o Quadro?");
+                    System.out.println("1- Para Sicronizar \n2-Para NÂO sicronizar");
+                   
+
+                    do {
+                          resposta2 = lerEntradaInt(entrada);
+                        switch (resposta2) {
+                            case 1:
+                                System.out.println("-----Reconstrução dos 18 fingurinos e dança do BALLET TRIÁDICO----- \n");
+                                System.out.println("O projeto de pesquisa 'A reconstrução dos 18 figurinosdo BALLET TRIÁDICO de Osckar Schlemmer ");
+                                System.out.println("foi iniciado no Centro Universitário Senac em 2007.");
+                                System.out.println("Tendo sido a primeira reconstituição desenvolvida na América Latina.[...]\n");
+                                System.out.println("----------O Ballet----------");
+                                System.out.println("[...] ");
+                                System.out.println("O Ballet Triádico consiste em três partes que formam uma estrutura de cenas de dança estilizadas,");
+                                System.out.println("variando do humor ao austero. [...]");
+                                System.out.println("Ele nomeou 'Triádico' para referi-se aos três atos, três dançarinos e ás três cores, uma para cada ato.[...] \n");
+                                System.out.println("Muito legal esse tal de Trindade não é mesmo");
+                                System.out.println("As três pessoas são distintas, mas são uma. Tem um princípio ai \n");
+                                break;
+                            case 2:
+                                System.out.println("Muito bem, isso pode fazer falta.\n");
+                                break;
+
+                            default:
+                                System.out.println("Opção inválida");
+                                break;
+                        }
+                    } while (resposta2 > 2 || resposta2 <= 0);
+
                     break;
+
                 default:
-                    System.out.println("Opção Inválida");
+                    System.out.println("Opção Inválida\n");
                     break;
             }
         } while (resposta1 > 2 || resposta1 <= 0);
-
-        
-        
-        
-        
+  
     }
 
     static void centroEsportivo(String[] args) {
