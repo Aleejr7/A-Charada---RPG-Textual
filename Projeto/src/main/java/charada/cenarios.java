@@ -25,7 +25,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
         System.out.println("\nA sua direita você tem o Estacionamento e uma grande árvore, com alguns bancos embaixo");
         System.out.println("A sua esquerda você tem a grande bliblioteca do senac e a obra de Elisa Bracher.");
         System.out.println("Uma obra de arte que consite em quatro troncos de árvore; a mesma não há um titulo, diante disso a denominamos como 'MUTIlADOS' ");
-        System.out.println("Na sua frente se encontra uma placa, a qual faz referência ao 'Abram Szajman'. Mais a frente está a entrada para o prédio 1 ");
+        System.out.println("Na sua frente se encontra uma placa, a qual faz referência ao 'Abram Szajman'. Mais a frente está a entrada para o prédio 1 \n");
     }
 
     static void biblioteca(String[] args) {

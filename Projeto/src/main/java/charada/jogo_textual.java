@@ -76,7 +76,7 @@ public class jogo_textual {
         do {
             System.out.println("----- MENU ----- \n");
             System.out.println("Digite 1 para jogar");
-            System.out.println("Digite 2 para rever as instruções");
+            System.out.println("Digite 2 para ver as instruções");
             System.out.println("Digite 3 para ver os Créditos");
             System.out.println("Digite 5 para sair \n");
 
@@ -97,7 +97,11 @@ public class jogo_textual {
                     String resposta;
                     int contador = 1;
                     do {
-                        System.out.println("Primeira charada \n");
+                       
+                        System.out.println(" **Fica dentro de um pequeno espaço, entretanto seu tamanho tende ao infinito, \n");
+                        System.out.println("Mas nada é ao acaso, precisa ser preparado, treinado e exercitado. \n");
+                        System.out.println("Do que estamos falando ??** \n");
+                        
                         System.out.println("Para responder a charada você pode escolher:");
                         System.out.println("Digite 1 para ir a Entrada");
                         System.out.println("Digite 2 para ir a Biblioteca");
@@ -126,10 +130,10 @@ public class jogo_textual {
                                 cenarios.lanchonete(args);
                                 break;
                             case 6:
-                                System.out.println("RESPOSTA: ");
+                                System.out.println("Digite sua resposta: ");
                                 resposta = input.next();
-                                if (resposta.toLowerCase().equals("correto")) {
-                                    System.out.println("Resposta correta, você irá ser direcionado a próxima charada");
+                                if (resposta.toLowerCase().equals("mente")) {
+                                    System.out.println("Resposta correta, você irá ser direcionado a próxima charada\n");
                                     contador++;
                                     break;
                                 } else {
@@ -142,7 +146,14 @@ public class jogo_textual {
                     }while (contador == 1);
                     
                     do{
-                        System.out.println("Segunda charada \n");
+                        System.out.println(" **Durante o dia sou visto no mar, \n");
+                        System.out.println("A noite sobre o luar,\n");
+                        System.out.println("Ninguem consegue me alcançar, \n");
+                        System.out.println("Se você nasceu entre fevereiro e março,\n");
+                        System.out.println("Contigo posso estar, \n");
+                        System.out.println("Vários vem antes de mim, \n");
+                        System.out.println("Mas no fim sempre estou lá.** \n");
+                        
                         System.out.println("Para responder a charada você pode escolher:");
                         System.out.println("Digite 1 para ir a Entrada");
                         System.out.println("Digite 2 para ir a Biblioteca");
@@ -171,10 +182,10 @@ public class jogo_textual {
                                 cenarios.lanchonete(args);
                                 break;
                             case 6:
-                                System.out.println("RESPOSTA");
+                                System.out.println("Digite sua resposta: ");
                                 resposta = input.next();
-                                if (resposta.toLowerCase().equals("correto")) {
-                                    System.out.println("Resposta correta, você irá ser direcionado a próxima charada");
+                                if (resposta.toLowerCase().equals("peixes")) {
+                                    System.out.println("Resposta correta, você irá ser direcionado a próxima charada\n");
                                     contador++;
                                     break;
                                 } else {
