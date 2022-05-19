@@ -29,90 +29,133 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
     }
 
     static void biblioteca(String[] args) {
+        
         Scanner input = new Scanner(System.in);
+        int resposta1;
         System.out.println("Bem vindo a Biblioteca, bom estudos \n");
         System.out.println("-------------Descrição da biblioteca------------- \n");
         System.out.println("Na entrada temos a obra 'GINASTA SENTADO'\n");
-        System.out.println("Uma obra produzida em 2006 pelo Autor Veríssimo \n");
-        System.out.println("A obra 'GINASTA SENATADO' consiste basicamente em um homem sentado e ao seu lado alguns livros. \n");
-        System.out.println("sicronizar com o GINASTA SENTADO?");
-        System.out.println("Caso deseja sicronizar digite: 1\nCaso não deseja digite qualquer outro número\n");
-        int resposta1 = input.nextInt();
 
-        if (resposta1 <= 1 && resposta1 > 0) {
-            System.out.println("Uma mente que não se exercita é como um atleta que não treina.");
+        do {
+            System.out.println("sicronizar com o GINASTA SENTADO?");
+            System.out.println("1-Para Sicronizar\n2-Para NÃO Sicronizar\n");
+            resposta1 = lerEntradaInt(input);
+            System.out.println("");
 
-        } else {
-            System.out.println("Ok, vamos coninuar.");
-        }
+            switch (resposta1) {
 
-        System.out.println("A direita temos a recepção, lemre-se de passar por lá caso deseje levar um livro para casa");
-        System.out.println("Vem, vamos entrar");
-        System.out.println("Olha ao seu redor, aqui temos um ambiente de estudo, com diversos computadores para você fazer seus trabalhos");
-        System.out.println("Além de diverso puff, sofa, e cadeiras para vc relachar enquanto estuda");
-        System.out.println("Vou te mostrar um lugar bem interessante, principalmente se você for fã de HQs");
-        System.out.println("Vem (:");
-        System.out.println("Olha esse lugar, qauntos HQs (:");
-        System.out.println("Olha esse poster do Superman, uouu maior que você");
-        System.out.println("Sicronizar com o Poster ?");
-        System.out.println("Caso deseja sicroniza digite: 1\nCaso não deseja digite qualquer outro número\n");
-        int resposta2 = input.nextInt();
-
-        if (resposta2 <= 1 && resposta2 > 0) {
-            System.out.println("E ae campeão, dia puxado não é msm");
-            System.out.println("Continue assim, você esta dando seu melhor este é o segredo, não desista");
-            System.out.println("Aqui vai uma dica");
-            System.out.println(/*Dica de uma charada*/);
-            System.out.println("Lembre-se o segredo do sucesso é a perseverança \n");
-            System.out.println("Muito bem, vamos seguir em frente");
-        } else {
-            System.out.println("Muito bem, vamos em frente então");
-        }
-
-        //Segundo anadr podemos colocar 
-        System.out.println("Deseja ir para o segundo andar da bliblioteca?");
-        System.out.println("Digite 1 - para ir ao segundo andar.\nCaso não queira deigite qualquer outro número");
-        int resposta3 = input.nextInt();
-
-        if (resposta3 <= 1 && resposta3 > 0) {
-            System.out.println("Bem aqui no segundo andar ficam os livros");
-            System.out.println("Temos uma imensa variedade de livros, é so você entrar nesses corredores e escolher o seu livro");
-            System.out.println("Eu sei que há muitos corredores ");
-            System.out.println("Mas vc pode se localizar por essas plaquinhas que há inicio de cada corredor");
-
-            System.out.println("Olhe para cima");
-            System.out.println("Gigante não é mesmo?");
-            System.out.println("Essa é a Vesica\nProvavelmente você ja ouvi falar sobre isso");
-
-            System.out.println("Sicronizar com a Vesica?");
-            System.out.println("Caso desejese sicroniza digite: 1\nCaso não desejese digite qualquer outro número");
-            int resposta4 = input.nextInt();
-
-            if (resposta4 <= 1 && resposta4 > 0) {
-                System.out.println("A VESICA é uma variação do símbolo zodical Peixes.");
-                System.out.println("E a era de Peixes se caractryezou pela encarnação formal,\naprofundadando assim a materialização do espírito.");
-            } else {
-                System.out.println("Muito bem, vamos em frente");
+                case 1:
+                    System.out.println("Uma obra produzida em 2006 pelo Autor Veríssimo \n");
+                    System.out.println("A obra 'GINASTA SENATADO' consiste basicamente em um homem sentado em posiçõ de reflexão e ao seu lado alguns livros. \n");
+                    System.out.println("'Uma mente que não se exercita é como um atleta que não treina'. \n");
+                    break;
+                case 2:
+                    System.out.println("Ok, vamos coninuar. \n");
+                    break;
+                default:
+                    System.out.println("Opção inválida \n");
+                    break;
             }
+        } while (resposta1 > 2 || resposta1 <= 0);
 
-        } else {// else realacionado a opção dele subir para o segundo andar
-            System.out.println("Lemre-se, conhecimento nunca é de mais.");
-        }
-        System.out.println("Ok, muito bom ver você por aqui\nVamos nós econtrar muito por aqui ");
-        System.out.println("Volte sempre");
-    }
-
-    static void predio1(String[] args) {
- int resposta1;
+        System.out.println("A direita temos a recepção, lemre-se de passar por lá caso deseje levar um livro para casa \n");
+        System.out.println("Vem, vamos entrar\n");
+        System.out.println("Olha ao seu redor, aqui temos um ambiente de estudo, com diversos computadores para você fazer seus trabalhos \n");
+        System.out.println("Além de diverso puff, sofa, e cadeiras para vc relachar enquanto estuda \n");
+        System.out.println("Vou te mostrar um lugar bem interessante, principalmente se você for fã de HQs \n");
+        System.out.println("Vem (: \n");
+        System.out.println("Olha esse lugar, qauntos HQs (: \n");
+        System.out.println("Olha esse poster do Superman, uouu maior que você \n");
         int resposta2;
-        Scanner entrada = new Scanner(System.in);
+
+        do {
+            System.out.println("Sicronizar com o Poster ?");
+            System.out.println("1-Para Sicronizar\n2-Para NÃO Sicronizar\n");
+            resposta2 = lerEntradaInt(input);
+            System.out.println("");
+
+            switch (resposta2) {
+
+                case 1:
+                    System.out.println("E ae campeão, dia puxado não é msm\n");
+                    System.out.println("Continue assim, você esta dando seu melhor este é o segredo, não desista \n");
+                    System.out.println("Aqui vai uma dica para o seu desafio");
+                    System.out.println(/*Dica de uma charada*/);
+                    System.out.println("Lembre-se o segredo do sucesso é a perseverança \n \n");
+                    System.out.println("'Muito bem, vamos seguir em frente' \n");
+                    break;
+
+                case 2:
+                    System.out.println("Muito bem, vamos em frente então \n");
+                    break;
+
+                default:
+                    System.out.println("Opção inválida \n");
+                    break;
+            }
+            System.out.println("AS escadas te levam ao segundo andar da bliblioteca \n");
+        } while (resposta2 > 2 || resposta2 <= 0);
+
+        int resposta3;
+        int resposta4;
+
+        do {
+            System.out.println("Deseja ir para o segundo andar da bliblioteca? \n");
+            System.out.println("1-Para ir ao segundo andar\n2-Para NÃO ir ao segundo andar \n");
+            resposta3 = lerEntradaInt(input);
+
+            switch (resposta3) {
+
+                case 1:
+                    System.out.println("Bem aqui no segundo andar ficam os livros \n");
+                    System.out.println("Temos uma imensa variedade de livros, é so você entrar nesses corredores e escolher o seu livro \n");
+                    System.out.println("Eu sei que há muitos corredores \n");
+                    System.out.println("Mas vc pode se localizar por essas plaquinhas que há inicio de cada corredor \n");
+                    System.out.println("Nos computadores você pode pesquisar se o seu livrono acervo, lá também vai informa o corredor que ele estar \n");
+
+                    System.out.println("Olhe para cima");
+                    System.out.println("Gigante não é mesmo?");
+                    System.out.println("Essa é a Vesica\nProvavelmente você ja ouvi falar sobre isso \n");
+                    do {
+
+                        System.out.println("Sicronizar com a Vesica? \n");
+                        System.out.println("1-Para Sicronizar\n2-Para NÃO Sicronizar\n");
+                        resposta4 = lerEntradaInt(input);
+
+                        switch (resposta4) {
+
+                            case 1:
+                                System.out.println("Esta escultura foi construida a partir do desenho formado pela sobreposição parcial de 2 circulos");
+                                System.out.println("Materialização - 0 divino fecunda o divino. \n");
+                                System.out.println("A VESICA é uma variação do símbolo zodical Peixes.");
+                                System.out.println("E a era de Peixes se caractryezou pela encarnação formal do espírito na forma,\naprofundadando assim a materialização do espírito.\n");
+
+                            case 2:
+                                System.out.println("Muito bem, vamos em frente. \n");
+                        }
+                    } while (resposta4 > 2 || resposta4 <= 0);
+
+                case 2:// else realacionado a opção dele subir para o segundo andar
+                    System.out.println("Lemre-se, conhecimento nunca é de mais. \n");
+            }
+            System.out.println("Ok, muito bom ver você por aqui\nEspero que nós econtremos muito aqui \n");
+            System.out.println("Volte sempre  (:\n");
+        } while (resposta3 > 2 || resposta3 <= 0);
+
+    }
+        
+   
+    static void predio1(String[] args) {
+        int resposta1;
+        int resposta2;
+        Scanner input = new Scanner(System.in);
         System.out.println("Esse espaço você deve conheer bem\n");
         System.out.println("Aqui é o espaço dos laboratórios, no qual temos nossas aulas\n");
         System.out.println("Temos o Corredor A e o Corredor C \n");
 
         do {
             System.out.println("Qual corredor você deseja ir ?\n1 - Para corredor A\n2 - Para corredor C");
-            resposta1 = lerEntradaInt(entrada);
+            resposta1 = lerEntradaInt(input);
 
             switch (resposta1) {
                 case 1:
@@ -134,7 +177,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                    
 
                     do {
-                          resposta2 = lerEntradaInt(entrada);
+                          resposta2 = lerEntradaInt(input);
                         switch (resposta2) {
                             case 1:
                                 System.out.println("-----Reconstrução dos 18 fingurinos e dança do BALLET TRIÁDICO----- \n");

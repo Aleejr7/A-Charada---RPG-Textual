@@ -7,10 +7,13 @@ public class jogo_textual {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String nome;
-        System.out.println("'A Charada' - Um jogo RPG Textual. \n");
+        System.out.println("------------A Charada------------\n");
+        System.out.println(" Um jogo RPG Textual. \n");
         System.out.println("Digite o nome do personagem: ");
         nome = input.next();
-        System.out.println("                 .:::!!!!!!!!!!::                                                           \n"
+        System.out.println("");//para pular uma linha 
+       
+        System.out.println("                                    .:::!!!!!!!!!!::                                                           \n"
                 + "                                       .:!!!!!!!!!!!!!!!!!!!!!!!:                                                       \n"
                 + "                                   .:!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!.                                                    \n"
                 + "                                .!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!.                                                  \n"
@@ -70,8 +73,8 @@ public class jogo_textual {
                 + "                            ::::::.                                                                                     \n"
                 + "                             ...                                                                                        \n"
                 + "                                                                                                                        \n");
-        System.out.println("Bem vindo ao jogo 'A Charada', " + nome + "\n O jogo acontece no espaço do Senac, no qual você irá ter interações com o espaço da Universidade.");
-        System.out.println("Será apresentado charadas a você, os seus resultados irão definir o seu futuro. \nDica: usufrua do espaço, para interagir com o jogo \n \n");
+        System.out.println("Bem vindo ao jogo 'A Charada', " + nome + "\n \nO jogo acontece no espaço do Senac, no qual você irá ter interações com o espaço da Universidade.\n");
+        System.out.println("Será apresentado charadas a você, os seus resultados irão definir o seu futuro. \nDica: usufrua do espaço, para interagir melhor com o jogo \n \n");
         
         do {
             System.out.println("----- MENU ----- \n");
@@ -82,6 +85,7 @@ public class jogo_textual {
 
             System.out.println("Digite um numero: ");
             int entrada = input.nextInt();
+            System.out.println("");
 
             switch (entrada) {
                 case 1:
@@ -111,6 +115,7 @@ public class jogo_textual {
                         System.out.println("Digite 6 para responder a charada \n");
                         System.out.println("Digite um numero:");
                         int alter = input.nextInt();
+                        System.out.println("");
 
                         switch (alter) {
 
@@ -163,6 +168,7 @@ public class jogo_textual {
                         System.out.println("Digite 6 para responder a charada \n");
                         System.out.println("Digite um numero:");
                         int alter = input.nextInt();
+                        System.out.println("");
 
                         switch (alter) {
 
@@ -205,6 +211,7 @@ public class jogo_textual {
                         System.out.println("Digite 6 para responder a charada \n");
                         System.out.println("Digite um numero:");
                         int alter = input.nextInt();
+                        System.out.println("");
 
                         switch (alter) {
 
@@ -247,6 +254,7 @@ public class jogo_textual {
                         System.out.println("Digite 6 para responder a charada \n");
                         System.out.println("Digite um numero:");
                         int alter = input.nextInt();
+                        System.out.println("");
 
                         switch (alter) {
 
