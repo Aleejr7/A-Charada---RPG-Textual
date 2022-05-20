@@ -151,13 +151,15 @@ public class jogo_textual {
                     }while (contador == 1);
                     
                     do{
-                        System.out.println(" **Durante o dia sou visto no mar, \n");
-                        System.out.println("A noite sobre o luar,\n");
-                        System.out.println("Ninguem consegue me alcançar, \n");
-                        System.out.println("Se você nasceu entre fevereiro e março,\n");
-                        System.out.println("Contigo posso estar, \n");
-                        System.out.println("Vários vem antes de mim, \n");
+                        System.out.println("**Durante o dia sou visto no mar");
+                        System.out.println("A noite sobre o luar,");
+                        System.out.println("ninguem consegue me alcançar ");
+                        System.out.println("Se você nasceu entre fevereiro e março,");
+                        System.out.println("Contigo posso estar ");
+                        System.out.println("Vários vem antes de mim ");
                         System.out.println("Mas no fim sempre estou lá.** \n");
+                        System.out.println("Quem sou?");
+                        
                         
                         System.out.println("Para responder a charada você pode escolher:");
                         System.out.println("Digite 1 para ir a Entrada");

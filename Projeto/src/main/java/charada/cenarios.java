@@ -48,9 +48,10 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                     System.out.println("Uma obra produzida em 2006 pelo Autor Veríssimo \n");
                     System.out.println("A obra 'GINASTA SENATADO' consiste basicamente em um homem sentado em posiçõ de reflexão e ao seu lado alguns livros. \n");
                     System.out.println("'Uma mente que não se exercita é como um atleta que não treina'. \n");
+                    System.out.println("----------------------------------------------------------------------------------------------");
                     break;
                 case 2:
-                    System.out.println("Ok, vamos coninuar. \n");
+                    System.out.println("Ok, vamos coninuar!. \n");
                     break;
                 default:
                     System.out.println("Opção inválida \n");
@@ -61,11 +62,11 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
         System.out.println("A direita temos a recepção, lemre-se de passar por lá caso deseje levar um livro para casa \n");
         System.out.println("Vem, vamos entrar\n");
         System.out.println("Olha ao seu redor, aqui temos um ambiente de estudo, com diversos computadores para você fazer seus trabalhos \n");
-        System.out.println("Além de diverso puff, sofa, e cadeiras para vc relachar enquanto estuda \n");
+        System.out.println("Além de diverso puff, sofá e cadeiras para vc relaxar enquanto estuda \n");
         System.out.println("Vou te mostrar um lugar bem interessante, principalmente se você for fã de HQs \n");
         System.out.println("Vem (: \n");
-        System.out.println("Olha esse lugar, qauntos HQs (: \n");
-        System.out.println("Olha esse poster do Superman, uouu maior que você \n");
+        System.out.println("Olha esse lugar, quantas HQs (: \n");
+        System.out.println("Olha esse poster do Superman, uouu maior que você!! \n");
         int resposta2;
 
         do {
@@ -79,9 +80,13 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                 case 1:
                     System.out.println("E ae campeão, dia puxado não é msm\n");
                     System.out.println("Continue assim, você esta dando seu melhor este é o segredo, não desista \n");
-                    System.out.println("Aqui vai uma dica para o seu desafio");
-                    System.out.println(/*Dica de uma charada*/);
-                    System.out.println("Lembre-se o segredo do sucesso é a perseverança \n \n");
+                    System.out.println("Você está meio para baixo, para te animar vou te contar uma piada, lá vai:  ");
+                    System.out.println("Um homem estava muito bebado na madrugada");
+                    System.out.println("Quando se deparou com uma freira, não demorou muito e eles sairam na mão");
+                    System.out.println("Depois de brigarem por muito tempo, a freira disse: ");
+                    System.out.println("PÔÔ, BATMAN Esperava mais de você kkkkkkk!!!! \n");
+                    System.out.println("Lembre-se o segredo do sucesso é a perseverança \n");
+                    System.out.println("----------------------------------------------------------------------------------------------");
                     System.out.println("'Muito bem, vamos seguir em frente' \n");
                     break;
 
@@ -93,14 +98,15 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                     System.out.println("Opção inválida \n");
                     break;
             }
-            System.out.println("AS escadas te levam ao segundo andar da bliblioteca \n");
+            System.out.println("As escadas te levam ao segundo andar da biblioteca \n");
+            
         } while (resposta2 > 2 || resposta2 <= 0);
 
         int resposta3;
         int resposta4;
 
         do {
-            System.out.println("Deseja ir para o segundo andar da bliblioteca? \n");
+            System.out.println("Deseja ir para o segundo andar da biblioteca? \n");
             System.out.println("1-Para ir ao segundo andar\n2-Para NÃO ir ao segundo andar \n");
             resposta3 = lerEntradaInt(input);
 
@@ -111,7 +117,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                     System.out.println("Temos uma imensa variedade de livros, é so você entrar nesses corredores e escolher o seu livro \n");
                     System.out.println("Eu sei que há muitos corredores \n");
                     System.out.println("Mas vc pode se localizar por essas plaquinhas que há inicio de cada corredor \n");
-                    System.out.println("Nos computadores você pode pesquisar se o seu livrono acervo, lá também vai informa o corredor que ele estar \n");
+                    System.out.println("Nos computadores você pode pesquisar se o seu livro está no acervo, lá também vai informa o corredor que ele estar \n");
 
                     System.out.println("Olhe para cima");
                     System.out.println("Gigante não é mesmo?");
@@ -129,17 +135,23 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                                 System.out.println("Materialização - 0 divino fecunda o divino. \n");
                                 System.out.println("A VESICA é uma variação do símbolo zodical Peixes.");
                                 System.out.println("E a era de Peixes se caractryezou pela encarnação formal do espírito na forma,\naprofundadando assim a materialização do espírito.\n");
-
+                                System.out.println("----------------------------------------------------------------------------------------------");
+                                break;
                             case 2:
                                 System.out.println("Muito bem, vamos em frente. \n");
+                                break;
+                            default :
+                                System.out.println("Opção Inválida");
+                                break;
                         }
                     } while (resposta4 > 2 || resposta4 <= 0);
 
-                case 2:// else realacionado a opção dele subir para o segundo andar
+                case 2:
                     System.out.println("Lemre-se, conhecimento nunca é de mais. \n");
             }
             System.out.println("Ok, muito bom ver você por aqui\nEspero que nós econtremos muito aqui \n");
-            System.out.println("Volte sempre  (:\n");
+            System.out.println("Volte sempre!!  (:\n");
+            System.out.println("----------------------------------------------------------------------------------------------");
         } while (resposta3 > 2 || resposta3 <= 0);
 
     }
@@ -149,7 +161,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
         int resposta1;
         int resposta2;
         Scanner input = new Scanner(System.in);
-        System.out.println("Esse espaço você deve conheer bem\n");
+        System.out.println("Esse espaço você deve conhecer bem\n");
         System.out.println("Aqui é o espaço dos laboratórios, no qual temos nossas aulas\n");
         System.out.println("Temos o Corredor A e o Corredor C \n");
 
@@ -164,6 +176,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                     System.out.println("Temos também a NASA ao lado, aposto que você conhece bem \n");
                     System.out.println("Olha só que legal, temos nas paredes diversos quadros, pinturas e desenhos. Isso deixa o ambiente mais atrativo não é mesmo? \n");
                     System.out.println("Por enquanto é so. Não se esqueça de dar uma passadinha no corredor C, pode ter algo mais interessante por lá");
+                    System.out.println("----------------------------------------------------------------------------------------------");
                     break;
 
                 case 2:
@@ -191,13 +204,14 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                                 System.out.println("Ele nomeou 'Triádico' para referi-se aos três atos, três dançarinos e ás três cores, uma para cada ato.[...] \n");
                                 System.out.println("Muito legal esse tal de Trindade não é mesmo");
                                 System.out.println("As três pessoas são distintas, mas são uma. Tem um princípio ai \n");
+                                System.out.println("----------------------------------------------------------------------------------------------");
                                 break;
                             case 2:
                                 System.out.println("Muito bem, isso pode fazer falta.\n");
                                 break;
 
                             default:
-                                System.out.println("Opção inválida");
+                                System.out.println("Opção inválida \n");
                                 break;
                         }
                     } while (resposta2 > 2 || resposta2 <= 0);
@@ -213,36 +227,52 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
     }
 
     static void centroEsportivo(String[] args) {
-        System.out.println("Esse aqui é o nosso Centro Esportivo");
+        System.out.println("-------Centro Esportivo--------");
         System.out.println("É aqui que você pode vir praticar algumas atividades físicas");
         System.out.println("E até se tornar um atleta do SENAC");
         System.out.println("A nossa direita temos a academia onde você pode manter sua forma física");
         System.out.println("E a esquerda temos algumas quadras de futebol, basquetebol, voleibol");
-        //System.out.println("Bem, e ali no fundo temos uma, oxii, uma capivara kkkkk");
-        System.out.println("Esse é o nosso centro esportivo, espero por você na quadra");
-        System.out.println("Até mais");
+        System.out.println("Bem, e ali no fundo temos uma, oxii, uma capivara kkkkk");
+        System.out.println("Esse é o nosso centro esportivo, espero por você na quadra\n");
+        System.out.println("Até mais\n");
+        System.out.println("----------------------------------------------------------------------------------------------");
 
     }
 
     static void lanchonete(String[] args) {
+        int resposta1;
         Scanner input = new Scanner(System.in);
-        System.out.println("Bem vindo a lanchonete");
-        System.out.println("Aqui é onde você vai comer seu lanchinho");
-        System.out.println("Aqui támbem temos alguns jogos: Tênis de Mesa; Pebolim");
-        System.out.println("Vamos jogar ?");
-        System.out.println("1-para jogar\n2-Não jogar");
-        int resposta = input.nextInt();
-
-        if (resposta <= 1 && resposta > 0) {
-            System.out.println("Você é um bom adversário");
-            System.out.println("Uou bom saque");
-            System.out.println("Você estar se saindo bem para uma primeira vez");
-            System.out.println("Você se saiu muito bem, em troca vou te dar uma dica preciosa");
-            System.out.println(/*dica para resolver uma charada*/);
-
-        } else {
-            System.out.println("Você pode jogar a qualquer momento, basta dar uma passadinha aqui");
-        }
+        System.out.println("-------------Bem vindo a lanchonete--------------\n");
+        System.out.println("Aqui é onde você vai comer seu lanchinho \n");
+        System.out.println("Aqui támbem temos alguns jogos: Tênis de Mesa; Pebolim \n");
+        System.out.println("Vamos jogar ? \n");
+  
+        
+        do{
+            System.out.println("1-Para jogar\n2-Para NÃO jogar");
+            resposta1 = lerEntradaInt(input);
+            System.out.println("");
+            switch(resposta1){
+                
+                case 1:
+                    
+            System.out.println("Você é um bom adversário \n");
+            System.out.println("Uouuu, bom saque!! \n");
+            System.out.println("Você estar se saindo bem para uma primeira vez \n");
+            System.out.println("Você se saiu muito bem, em troca vou te dar uma dica preciosa \n");
+            System.out.println("Você joga muito bem, deveria entrar para a *KAPIVA* \n");
+            System.out.println("----------------------------------------------------------------------------------------------");
+            break;
+                case 2 :
+                    
+            System.out.println("Você pode jogar a qualquer momento, basta dar uma passadinha aqui \n");
+                break;
+                
+                default :
+                    System.out.println("Opção Inválida");
+                    break;
+            }
+        }while(resposta1 > 2 || resposta1 <= 0);
         System.out.println("Muito bem. Sempre que estiver com fome você sabeonde ir :)");
     }
 
