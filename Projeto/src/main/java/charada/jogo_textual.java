@@ -158,7 +158,7 @@ public class jogo_textual {
                         System.out.println("Contigo posso estar ");
                         System.out.println("Vários vem antes de mim ");
                         System.out.println("Mas no fim sempre estou lá.** \n");
-                        System.out.println("Quem sou?");
+                        System.out.println("Quem sou ?");
                         
                         
                         System.out.println("Para responder a charada você pode escolher:");
