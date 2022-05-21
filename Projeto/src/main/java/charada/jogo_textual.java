@@ -81,7 +81,7 @@ public class jogo_textual {
             System.out.println("Digite 1 para jogar");
             System.out.println("Digite 2 para ver as instruções");
             System.out.println("Digite 3 para ver os Créditos");
-            System.out.println("Digite 5 para sair \n");
+            System.out.println("Digite 4 para sair \n");
 
             System.out.println("Digite um numero: ");
             int entrada = input.nextInt();
@@ -294,11 +294,22 @@ public class jogo_textual {
                     
                    
                 case 2:
-                    System.out.println("Intruções:");
+                    System.out.println("--------------- Como jogar \"A charada\" ---------------\n" +
+"\n" +
+"1 - Aproveite o máximo de todos ambientes para obter dicas!\n" +
+"\n" +
+"2 - Coloque em pratica seu raciocino logico.\n" +
+"\n" +
+"3 - Preste atenção em cada detalher, pois faz a diferença.\n" +
+"\n" +
+"4 - Todos nossos cenarios foram pesquisado diretamente dentro do Centro universitario Senac.\n" +
+"\n" +
+"5 - Pode escrever as respostas das charadas em maiusculo ou minisculo, tanto faz. \n");
                     break;   
                     
                 case 3:
-                    System.out.println("Idealizado e Desenvolvido por : Alesandro da Rocha; Augusto Brito; Brenno Lima e Deive Oliveira. Alunos do Curso Analise e Desenvolvimento de Sistemas.");
+                    System.out.println("Idealizado e Desenvolvido por : Alesandro da Rocha; Augusto Brito; Brenno Lima e Deive Oliveira.\n");
+                    System.out.println("Alunos do Curso Analise e Desenvolvimento de Sistemas.\n");
                     break;
                     
                 case 4:
