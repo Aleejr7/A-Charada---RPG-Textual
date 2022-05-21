@@ -203,7 +203,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                                 System.out.println("variando do humor ao austero. [...]");
                                 System.out.println("Ele nomeou 'Triádico' para referi-se aos três atos, três dançarinos e ás três cores, uma para cada ato.[...] \n");
                                 System.out.println("Muito legal esse tal de Trindade não é mesmo");
-                                System.out.println("As três pessoas são distintas, mas são uma. Tem um princípio ai \n");
+                                System.out.println("As três pessoas são distintas, mas são uma (Deus). Tem um princípio ai \n");
                                 System.out.println("----------------------------------------------------------------------------------------------");
                                 break;
                             case 2:
