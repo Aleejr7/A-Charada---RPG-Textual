@@ -203,7 +203,9 @@ public class jogo_textual {
                     }while(contador == 2);
                     
                     do{
-                        System.out.println("Terceira charada \n");
+                        System.out.println("Sou um só, pórem posso me revelar em três pessoas consubstanciais, \n");
+                        System.out.println("Expressões ou hipóstases. As três pessoas são distintas, \n");
+                        System.out.println("Mas são uma \"substância, essência ou natureza \n");
                         System.out.println("Para responder a charada você pode escolher:");
                         System.out.println("Digite 1 para ir a Entrada");
                         System.out.println("Digite 2 para ir a Biblioteca");
@@ -233,9 +235,9 @@ public class jogo_textual {
                                 cenarios.lanchonete(args);
                                 break;
                             case 6:
-                                System.out.println("RESPOSTA");
+                                System.out.println("Digite sua resposta:");
                                 resposta = input.next();
-                                if (resposta.toLowerCase().equals("correto")) {
+                                if (resposta.toLowerCase().equals("deus")) {
                                     System.out.println("Resposta correta, você irá ser direcionado a próxima charada");
                                     contador++;
                                     break;
