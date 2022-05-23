@@ -104,7 +104,7 @@ public class jogo_textual {
                        
                         System.out.println("   |Fica dentro de um pequeno espaço, entretanto seu tamanho tende ao infinito,");
                         System.out.println("   |mas nada é ao acaso, precisa ser preparado, treinado e exercitado.");
-                        System.out.println("   |Do que estamos falando ? \n \n");
+                        System.out.println("   |Do que estamos falando  ? \n \n");
                         
                         System.out.println("Para responder a charada você pode escolher: ");
                         System.out.println("*Dica: use o espaço do SENAC \n");
