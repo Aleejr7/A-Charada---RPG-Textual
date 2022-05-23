@@ -38,7 +38,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
 
         do {
             System.out.println("sicronizar com o GINASTA SENTADO?");
-            System.out.println("1-Para Sicronizar\n2-Para NÃO Sicronizar\n");
+            System.out.println("1-Para Sicronizar\n 2-Para NÃO Sicronizar\n");
             resposta1 = lerEntradaInt(input);
             System.out.println("");
 
@@ -166,7 +166,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
         System.out.println("Temos o Corredor A e o Corredor C \n");
 
         do {
-            System.out.println("Qual corredor você deseja ir ?\n1 - Para corredor A\n2 - Para corredor C");
+            System.out.println("Qual corredor você deseja ir ? \n1 - Para corredor A \n2 - Para corredor C");
             resposta1 = lerEntradaInt(input);
 
             switch (resposta1) {
@@ -243,8 +243,8 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
         int resposta1;
         Scanner input = new Scanner(System.in);
         System.out.println("-------------Bem vindo a lanchonete--------------\n");
-        System.out.println("Aqui é onde você vai comer seu lanchinho \n");
-        System.out.println("Aqui támbem temos alguns jogos: Tênis de Mesa; Pebolim \n");
+        System.out.println("Aqui é onde você vai comer seu lanchinho ");
+        System.out.println("Aqui támbem temos alguns jogos: Tênis de Mesa; Pebolim ");
         System.out.println("Vamos jogar ? \n");
   
         
@@ -256,11 +256,9 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                 
                 case 1:
                     
-            System.out.println("Você é um bom adversário \n");
-            System.out.println("Uouuu, bom saque!! \n");
-            System.out.println("Você estar se saindo bem para uma primeira vez \n");
-            System.out.println("Você se saiu muito bem, em troca vou te dar uma dica preciosa \n");
-            System.out.println("Você joga muito bem, deveria entrar para a *KAPIVA* \n");
+            System.out.println("Você é um bom adversário...");
+            System.out.println("Uouuu, bom saque!! ");
+            System.out.println("Você está se saindo bem para uma primeira vez, deveria entrar para a *KAPIVA* ");
             System.out.println("----------------------------------------------------------------------------------------------");
             break;
                 case 2 :
@@ -273,7 +271,6 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                     break;
             }
         }while(resposta1 > 2 || resposta1 <= 0);
-        System.out.println("Muito bem. Sempre que estiver com fome você sabeonde ir :)");
     }
 
 }
