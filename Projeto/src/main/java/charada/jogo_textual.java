@@ -79,8 +79,7 @@ public class jogo_textual {
                 + "                                                                                                                        \n");
         System.out.println("Bem vindo ao jogo 'A Charada', " + nome + "\n \nO jogo acontece no espaço do Senac, no qual você irá ter interações com o espaço da Universidade.\n");
         System.out.println("Será apresentado charadas a você, os seus resultados irão definir o seu futuro. \nDica: usufrua do espaço, para interagir melhor com o jogo \n \n");
-        
-        
+
         do {
             System.out.println("----- MENU ----- \n");
             System.out.println("Digite 1 para jogar");
@@ -109,101 +108,114 @@ public class jogo_textual {
 
                     // CHARADAS
                     while (contador < 5) {
-                        if (contador == 1) {
-                            System.out.println("   |Fica dentro de um pequeno espaço, entretanto seu tamanho tende ao infinito,");
-                            System.out.println("   |mas nada é ao acaso, precisa ser preparado, treinado e exercitado.");
-                            System.out.println("   |Do que estamos falando  ? \n \n");
-                        } else if (contador == 2) {
-                            System.out.println("   |Durante o dia sou visto no mar");
-                            System.out.println("   |a noite sobre o luar,");
-                            System.out.println("   |ninguem consegue me alcançar, ");
-                            System.out.println("   |se você nasceu entre fevereiro e março,");
-                            System.out.println("   |contigo posso estar ");
-                            System.out.println("   |vários vem antes de mim ");
-                            System.out.println("   |mas no fim sempre estou lá. \n");
-                            System.out.println("   |Quem sou ? \n\n");
-                        } else if (contador == 3) {
-                            System.out.println("   |Sou um só, pórem posso me revelar em três pessoas consubstanciais, ");
-                            System.out.println("   |expressões ou hipóstases. As três pessoas são distintas, ");
-                            System.out.println("   |mas são uma substância, essência ou natureza. ");
-                            System.out.println("   |Do que estamos falando ? \n \n");
-                        } else if (contador == 4) {
-                            System.out.println("   |Tem uma capivara no centro esportivo... ");
-                            System.out.println("   |Qual o nome dela? \n\n");
+                        switch (contador) {
+                            case 1:
+                                System.out.println("-------------------------------------Charada------------------------------------------------------------------------\n");
+                                System.out.println("   |Fica dentro de um pequeno espaço, entretanto seu tamanho tende ao infinito,");
+                                System.out.println("   |mas nada é ao acaso, precisa ser preparado, treinado e exercitado.");
+                                System.out.println("   |Do que estamos falando  ? \n ");
+                                System.out.println("--------------------------------------------------------------------------------------------------------------------");
+                                break;
+                            case 2:
+                              System.out.println("-------------------------------------Charada------------------------------------------------------------------------\n");
+                                System.out.println("   |Durante o dia sou visto no mar");
+                                System.out.println("   |a noite sobre o luar,");
+                                System.out.println("   |ninguem consegue me alcançar, ");
+                                System.out.println("   |se você nasceu entre fevereiro e março,");
+                                System.out.println("   |contigo posso estar ");
+                                System.out.println("   |vários vem antes de mim ");
+                                System.out.println("   |mas no fim sempre estou lá. \n");
+                                System.out.println("   |Quem sou ? \n");
+                                System.out.println("--------------------------------------------------------------------------------------------------------------------");
+                                break;
+                            case 3:
+                                System.out.println("-------------------------------------Charada------------------------------------------------------------------------\n");
+                                System.out.println("   |Sou um só, pórem posso me revelar em três pessoas consubstanciais, ");
+                                System.out.println("   |expressões ou hipóstases. As três pessoas são distintas, ");
+                                System.out.println("   |mas são uma substância, essência ou natureza. ");
+                                System.out.println("   |Do que estamos falando ? \n \n");
+                                System.out.println("--------------------------------------------------------------------------------------------------------------------");
+                                break;
+                            case 4:
+                                System.out.println("-------------------------------------Charada------------------------------------------------------------------------\n");
+                                System.out.println("   |Tem uma capivara no centro esportivo... ");
+                                System.out.println("   |Qual o nome dela? \n\n");
+                                System.out.println("--------------------------------------------------------------------------------------------------------------------");
+                                break;
                         }
-                    
-                    // RESPONDER A CHARADA OU USAR O ESPAÇO SENAC
-                    System.out.println("Para responder a charada você pode escolher: ");
-                    System.out.println("*Dica: use o espaço do SENAC \n");
-                    System.out.println("Digite 1 para ir a Entrada");
-                    System.out.println("Digite 2 para ir a Biblioteca");
-                    System.out.println("Digite 3 para ir ao Predio1");
-                    System.out.println("Digite 4 para ir ao CentroEsportivo");
-                    System.out.println("Digite 5 para ir a Lanchonete");
-                    System.out.println("Digite 6 para responder a charada \n");
-                    System.out.println("Digite um numero:");
-                    int alter = input.nextInt();
-                    System.out.println("");
 
-                    switch (alter) {
-                        case 1:
-                            cenarios.entrada();
-                            break;
-                        case 2:
-                            cenarios.biblioteca(args);
-                            break;
-                        case 3:
-                            cenarios.predio1(args);
-                            break;
-                        case 4:
-                            cenarios.centroEsportivo(args);
-                            break;
-                        case 5:
-                            cenarios.lanchonete(args);
-                            break;
-                        case 6:
-                            System.out.println("Digite sua resposta: ");
-                            resposta = input.next();
-                            if (contador == 1) {
-                                if (resposta.toLowerCase().equals("mente")) {
-                                    System.out.println("Resposta correta, você irá ser direcionado a próxima charada\n");
-                                    contador++;
-                                    break;
-                                } else {
-                                    System.out.println("Resposta errada!");
-                                }
+                        // RESPONDER A CHARADA OU USAR O ESPAÇO SENAC
+                        System.out.println("Para responder a charada você pode escolher: ");
+                        System.out.println("*Dica: use o espaço do SENAC \n");
+                        System.out.println("Digite 1 para ir a Entrada");
+                        System.out.println("Digite 2 para ir a Biblioteca");
+                        System.out.println("Digite 3 para ir ao Predio1");
+                        System.out.println("Digite 4 para ir ao CentroEsportivo");
+                        System.out.println("Digite 5 para ir a Lanchonete");
+                        System.out.println("Digite 6 para responder a charada \n");
+                        System.out.println("Digite um numero:");
+                        int alter = input.nextInt();
+                        System.out.println("");
 
-                            } else if (contador == 2) {
-                                if (resposta.toLowerCase().equals("peixes")) {
-                                    System.out.println("Resposta correta, você irá ser direcionado a próxima charada\n");
-                                    contador++;
-                                    break;
-                                } else {
-                                    System.out.println("Resposta errada!");
-                                }
+                        switch (alter) {
+                            case 1:
+                                cenarios.entrada();
+                                break;
+                            case 2:
+                                cenarios.biblioteca(args);
+                                break;
+                            case 3:
+                                cenarios.predio1(args);
+                                break;
+                            case 4:
+                                cenarios.centroEsportivo(args);
+                                break;
+                            case 5:
+                                cenarios.lanchonete(args);
+                                break;
+                            case 6:
+                                System.out.println("Digite sua resposta: ");
+                                resposta = input.next();
+                                if (contador == 1) {
+                                    if (resposta.toLowerCase().equals("mente")) {
+                                        System.out.println("Resposta correta, você irá ser direcionado a próxima charada\n");
+                                        contador++;
+                                        break;
+                                    } else {
+                                        System.out.println("*******Resposta errada!*********");
+                                    }
 
-                            } else if (contador == 3) {
-                                if (resposta.toLowerCase().equals("deus")) {
-                                    System.out.println("Resposta correta, você irá ser direcionado a próxima charada\n");
-                                    contador++;
-                                    break;
-                                } else {
-                                    System.out.println("Resposta errada!");
-                                }
+                                } else if (contador == 2) {
+                                    if (resposta.toLowerCase().equals("peixes")) {
+                                        System.out.println("Resposta correta, você irá ser direcionado a próxima charada\n");
+                                        contador++;
+                                        break;
+                                    } else {
+                                        System.out.println("*******Resposta errada!*********");
+                                    }
 
-                            } else if (contador == 4) {
-                                if (resposta.toLowerCase().equals("kapiva")) {
-                                    System.out.println("");
-                                    contador++;
-                                    break;
-                                } else {
-                                    System.out.println("Resposta errada!");
+                                } else if (contador == 3) {
+                                    if (resposta.toLowerCase().equals("deus")) {
+                                        System.out.println("Resposta correta, você irá ser direcionado a próxima charada\n");
+                                        contador++;
+                                        break;
+                                    } else {
+                                        System.out.println("*******Resposta errada!*********");
+                                    }
+
+                                } else if (contador == 4) {
+                                    if (resposta.toLowerCase().equals("kapiva")) {
+                                        System.out.println("");
+                                        contador++;
+                                        break;
+                                    } else {
+                                        System.out.println("*******Resposta errada!*********");
+                                    }
                                 }
-                            }
-                        default:
-                            System.out.println("Opção Inválida\n");
-                            break;
-                    }
+                            default:
+                                System.out.println("Opção Inválida\n");
+                                break;
+                        }
                     }
                     System.out.println("Parabéns você conseguiu concluir todas charadas!");
                     System.out.println("Agora você está aprovado e dá 'orgulho' para sua familia\n");
@@ -232,7 +244,7 @@ public class jogo_textual {
                     System.out.println("Até mais!");
                     System.exit(0);
                     break;
-                    
+
                 default:
                     System.out.println("Opção Inválida\n");
                     break;
