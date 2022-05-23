@@ -38,7 +38,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
 
         do {
             System.out.println("sicronizar com o GINASTA SENTADO?");
-            System.out.println("1-Para Sicronizar\n 2-Para NÃO Sicronizar\n");
+            System.out.println("1-Para Sicronizar\n2-Para NÃO Sicronizar\n");
             resposta1 = lerEntradaInt(input);
             System.out.println("");
 
@@ -46,7 +46,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
 
                 case 1:
                     System.out.println("Uma obra produzida em 2006 pelo Autor Veríssimo \n");
-                    System.out.println("A obra 'GINASTA SENATADO' consiste basicamente em um homem sentado em posiçõ de reflexão e ao seu lado alguns livros. \n");
+                    System.out.println("A obra 'GINASTA SENATADO' consiste basicamente em um homem sentado em posição de reflexão e ao seu lado alguns livros. \n");
                     System.out.println("'Uma mente que não se exercita é como um atleta que não treina'. \n");
                     System.out.println("----------------------------------------------------------------------------------------------");
                     break;
@@ -134,7 +134,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                                 System.out.println("Esta escultura foi construida a partir do desenho formado pela sobreposição parcial de 2 circulos");
                                 System.out.println("Materialização - 0 divino fecunda o divino. \n");
                                 System.out.println("A VESICA é uma variação do símbolo zodical Peixes.");
-                                System.out.println("E a era de Peixes se caractryezou pela encarnação formal do espírito na forma,\naprofundadando assim a materialização do espírito.\n");
+                                System.out.println("E a era de Peixes se caracterizou pela encarnação formal do espírito na forma,\naprofundadando assim a materialização do espírito.\n");
                                 System.out.println("----------------------------------------------------------------------------------------------");
                                 break;
                             case 2:
@@ -149,8 +149,8 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                 case 2:
                     System.out.println("Lemre-se, conhecimento nunca é de mais. \n");
             }
-            System.out.println("Ok, muito bom ver você por aqui\nEspero que nós econtremos muito aqui \n");
-            System.out.println("Volte sempre!!  (:\n");
+            System.out.println("Ok, muito bom ver você por aqui\nEspero que nos econtremos em breve aqui. \n");
+            System.out.println("Volte sempre!  (:\n");
             System.out.println("----------------------------------------------------------------------------------------------");
         } while (resposta3 > 2 || resposta3 <= 0);
 
