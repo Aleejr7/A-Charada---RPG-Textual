@@ -116,7 +116,7 @@ public class jogo_textual {
                         System.out.println("Digite 6 para responder a charada \n");
                         System.out.println("Digite um numero:");
                         int alter = input.nextInt();
-                        System.out.println("");
+                        System.out.println(" ");
 
                         switch (alter) {
 
