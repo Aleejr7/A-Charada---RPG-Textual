@@ -145,7 +145,8 @@ public class jogo_textual {
                                     System.out.println("Resposta errada!");
                                 }
                             default:
-                                System.out.println("Este não é um numero válido! \n");
+                                 System.out.println("Opção Inválida\n");
+                                 break;
                             
                         }
                     }while (contador == 1);
@@ -199,13 +200,16 @@ public class jogo_textual {
                                 } else {
                                     System.out.println("Resposta errada!");
                                 }
+                            default:
+                                 System.out.println("Opção Inválida\n");
+                                 break;
                         }
                     }while(contador == 2);
                     
                     do{
-                        System.out.println("Sou um só, pórem posso me revelar em três pessoas consubstanciais, \n");
+                        System.out.println(" **Sou um só, pórem posso me revelar em três pessoas consubstanciais, \n");
                         System.out.println("Expressões ou hipóstases. As três pessoas são distintas, \n");
-                        System.out.println("Mas são uma \"substância, essência ou natureza \n");
+                        System.out.println("Mas são uma substância, essência ou natureza** \n");
                         System.out.println("Para responder a charada você pode escolher:");
                         System.out.println("Digite 1 para ir a Entrada");
                         System.out.println("Digite 2 para ir a Biblioteca");
@@ -244,11 +248,15 @@ public class jogo_textual {
                                 } else {
                                     System.out.println("Resposta errada!");
                                 }
+                            default:
+                                 System.out.println("Opção Inválida\n");
+                                 break;  
+                             
                         }
                     }while(contador == 3);
                     
                     do{
-                        System.out.println("Quarta charada \n");
+                        System.out.println(" **Tem uma capivara no centro esportivo... Qual o nome dela?** \n");
                         System.out.println("Para responder a charada você pode escolher:");
                         System.out.println("Digite 1 para ir a Entrada");
                         System.out.println("Digite 2 para ir a Biblioteca");
@@ -278,17 +286,25 @@ public class jogo_textual {
                                 cenarios.lanchonete(args);
                                 break;
                             case 6:
-                                System.out.println("RESPOSTA");
+                                System.out.println("Digite sua resposta:");
                                 resposta = input.next();
-                                if (resposta.toLowerCase().equals("correto")) {
-                                    System.out.println("Resposta correta, você irá ser direcionado a próxima charada");
+                                if (resposta.toLowerCase().equals("kapiva")) {
+                                    
                                     contador++;
                                     break;
                                 } else {
                                     System.out.println("Resposta errada!");
                                 }
+                                
+                            default:
+                                 System.out.println("Opção Inválida\n");
+                                 break;
                         }
                     }while(contador == 4);
+                    
+                    System.out.println("Parabéns você conseguiu concluir todas charadas,\n");
+                    System.out.println("Agora você vai conseguir passar de ano e dá 'orgulho' para sua familia\n");
+                    
                     break;
                     
                     
@@ -317,7 +333,10 @@ public class jogo_textual {
                 case 4:
                     System.exit(0);
                     break;
-            }
+                default:
+                    System.out.println("Opção Inválida\n");
+                    break;    
+            }   
         } while (true);
     }
 
