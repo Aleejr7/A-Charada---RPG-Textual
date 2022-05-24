@@ -265,5 +265,5 @@ public class jogo_textual {
                     break;
             }
         } while (true);
+        }
     }
-}
