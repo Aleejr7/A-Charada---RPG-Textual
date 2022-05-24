@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class jogo_textual {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Scanner input = new Scanner(System.in);
         String nome;
         System.out.println("|----------------------------------|");
@@ -79,10 +79,10 @@ public class jogo_textual {
                 + "                                                                                                                        \n");
         System.out.println("Bem vindo ao jogo 'A Charada', " + nome + "\n \nO jogo acontece no espaço do Senac, no qual você irá ter interações com o espaço da Universidade.\n");
         System.out.println("Será apresentado charadas a você, os seus resultados irão definir o seu futuro. \nDica: usufrua do espaço, para interagir melhor com o jogo \n \n");
-
+        Thread.sleep(3000);
+        
         do {
             System.out.println("----- MENU ----- \n");
-            System.out.println("Digite 1 para jogar");
             System.out.println("Digite 1 para jogar");
             System.out.println("Digite 2 para ver as instruções");
             System.out.println("Digite 3 para ver os Créditos");
@@ -102,7 +102,7 @@ public class jogo_textual {
                     System.out.println("O professor fã de charadas, dá um livro com uma sequência de charadas, caso " + nome + " conseguir responder todas corretamente, o professor hackeia o sistema do SENAC e aprova o aluno\n");
                     System.out.println(nome + " passa a noite toda estudando o livro e volta no dia seguinte para tentar resolver as charadas.");
                     System.out.println("Chegando ao SENAC você abre o livro na primeira charada:\n \n ");
-
+                    Thread.sleep(3000);
                     String resposta;
                     int contador = 1;
 
@@ -115,6 +115,7 @@ public class jogo_textual {
                                 System.out.println("   |mas nada é ao acaso, precisa ser preparado, treinado e exercitado.");
                                 System.out.println("   |Do que estamos falando  ? \n ");
                                 System.out.println("--------------------------------------------------------------------------------------------------------------------");
+                                Thread.sleep(3000);
                                 break;
                             case 2:
                               System.out.println("-------------------------------------Charada------------------------------------------------------------------------\n");
@@ -127,6 +128,7 @@ public class jogo_textual {
                                 System.out.println("   |mas no fim sempre estou lá. \n");
                                 System.out.println("   |Quem sou ? \n");
                                 System.out.println("--------------------------------------------------------------------------------------------------------------------");
+                                Thread.sleep(3000);
                                 break;
                             case 3:
                                 System.out.println("-------------------------------------Charada------------------------------------------------------------------------\n");
@@ -135,12 +137,14 @@ public class jogo_textual {
                                 System.out.println("   |mas são uma substância, essência ou natureza. ");
                                 System.out.println("   |Do que estamos falando ? \n \n");
                                 System.out.println("--------------------------------------------------------------------------------------------------------------------");
+                                Thread.sleep(3000);
                                 break;
                             case 4:
                                 System.out.println("-------------------------------------Charada------------------------------------------------------------------------\n");
                                 System.out.println("   |Tem uma capivara no centro esportivo... ");
                                 System.out.println("   |Qual o nome dela? \n\n");
                                 System.out.println("--------------------------------------------------------------------------------------------------------------------");
+                                Thread.sleep(3000);
                                 break;
                         }
 
@@ -179,37 +183,45 @@ public class jogo_textual {
                                 if (contador == 1) {
                                     if (resposta.toLowerCase().equals("mente")) {
                                         System.out.println("Resposta correta, você irá ser direcionado a próxima charada\n");
+                                        Thread.sleep(2000);
                                         contador++;
                                         break;
                                     } else {
                                         System.out.println("*******Resposta errada!*********");
+                                        Thread.sleep(2000);
                                     }
 
                                 } else if (contador == 2) {
                                     if (resposta.toLowerCase().equals("peixes")) {
                                         System.out.println("Resposta correta, você irá ser direcionado a próxima charada\n");
+                                        Thread.sleep(2000);
                                         contador++;
                                         break;
                                     } else {
                                         System.out.println("*******Resposta errada!*********");
+                                        Thread.sleep(2000);
                                     }
 
                                 } else if (contador == 3) {
                                     if (resposta.toLowerCase().equals("deus")) {
                                         System.out.println("Resposta correta, você irá ser direcionado a próxima charada\n");
+                                        Thread.sleep(2000);
                                         contador++;
                                         break;
                                     } else {
                                         System.out.println("*******Resposta errada!*********");
+                                        Thread.sleep(2000);
                                     }
 
                                 } else if (contador == 4) {
                                     if (resposta.toLowerCase().equals("kapiva")) {
                                         System.out.println("");
+                                        Thread.sleep(2000);
                                         contador++;
                                         break;
                                     } else {
                                         System.out.println("*******Resposta errada!*********");
+                                        Thread.sleep(2000);
                                     }
                                 }
                             default:
@@ -218,7 +230,8 @@ public class jogo_textual {
                         }
                     }
                     System.out.println("Parabéns você conseguiu concluir todas charadas!");
-                    System.out.println("Agora você está aprovado e dá 'orgulho' para sua familia\n");
+                    System.out.println("Agora você está aprovado e dara 'orgulho' para sua familia\n");
+                    Thread.sleep(2000);
                     break;
 
                 case 2:
@@ -233,11 +246,13 @@ public class jogo_textual {
                             + "4 - Todos nossos cenarios foram pesquisados diretamente dentro do Centro universitario Senac.\n"
                             + "\n"
                             + "5 - As respostas podem ser escritas em maiúsculo ou minúsculo \n");
+                    Thread.sleep(3000);
                     break;
 
                 case 3:
                     System.out.println("Idealizado e Desenvolvido por : Alesandro da Rocha; Augusto Brito; Brenno Lima e Deive Oliveira.\n");
                     System.out.println("Alunos do Curso: Análise e Desenvolvimento de Sistemas.\n");
+                    Thread.sleep(3000);
                     break;
 
                 case 4:
