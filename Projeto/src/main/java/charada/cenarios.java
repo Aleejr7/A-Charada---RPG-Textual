@@ -5,9 +5,9 @@ package charada;
 
 import java.util.Scanner;
 
-
 public class cenarios {//entrada de dados para ler somente valor númerico OBS: Substituir todos os O
-     static int lerEntradaInt(Scanner entrada) {
+
+    static int lerEntradaInt(Scanner entrada) {
         do {
             System.out.println("Digite valor numérico: ");
             try {
@@ -21,16 +21,38 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
     }
 
     static void entrada() throws InterruptedException {
+        Scanner input = new Scanner(System.in);
         System.out.println("Você está na entrada do Senac, esta é vista 360º do local");
-        System.out.println("\nA sua direita você tem o Estacionamento e uma grande árvore, com alguns bancos embaixo");
-        System.out.println("A sua esquerda você tem a grande bliblioteca do senac e a obra de Elisa Bracher.");
-        System.out.println("Uma obra de arte que consite em quatro troncos de árvore; a mesma não há um titulo, diante disso a denominamos como 'MUTIlADOS' ");
-        System.out.println("Na sua frente se encontra uma placa, a qual faz referência ao 'Abram Szajman'. Mais a frente está a entrada para o prédio 1 \n");
-        Thread.sleep(3000);
+        System.out.println("A sua direita você tem o Estacionamento e uma grande árvore, com alguns bancos embaixo");
+        System.out.println("A sua esquerda você tem a grande bliblioteca do senac e a obra de Elisa Bracher, a qual não foi atribuído um título.\n");
+        int resposta;
+        do {
+
+            System.out.println("Sicronizar com a obra ?");
+            System.out.println("1-Para Sicronizar\n2-Para NÃO Sicronizar\n");
+            resposta = lerEntradaInt(input);
+
+            switch (resposta) {
+                case (1):
+                    System.out.println("Uma obra de arte que consite em quatro troncos de árvore; como não há título denominamos 'MUTIlADOS' ");
+                    System.out.println("Ao olharmos para obra, é possivel farzer uma ligação instântanea ao desmatamento");
+                    System.out.println("E por mais que a madeira ainda seja utilizado como matéria prima para confecção de livros, cadernos, móveis e etc...");
+                    System.out.println("É uma pratica inaceitável nos dias atuais \n  ");
+                    Thread.sleep(3000);
+                    System.out.println("-----------------------------------------------------------------------------------------------------------------------");
+                    break;
+                case (2):
+                    System.out.println("Ok, vamos em fente!!");
+                    break;
+                    default:
+                        System.out.println("Opção inválida");
+            }
+            System.out.println("Bom mais a frente encontra-se uma placa, a qual faz referência ao 'Abram Szajman'. Mais a frente está a entrada para o prédio 1 \n");   
+        } while(resposta > 2 || resposta <= 0);
     }
 
     static void biblioteca(String[] args) throws InterruptedException {
-        
+
         Scanner input = new Scanner(System.in);
         int resposta1;
         System.out.println("Bem vindo a Biblioteca, bom estudos \n");
@@ -42,7 +64,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
             System.out.println("1-Para Sicronizar\n2-Para NÃO Sicronizar\n");
             resposta1 = lerEntradaInt(input);
             System.out.println("");
-            
+
             switch (resposta1) {
 
                 case 1:
@@ -55,7 +77,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                 case 2:
                     System.out.println("Ok, vamos coninuar!. \n");
                     break;
-                    
+
                 default:
                     System.out.println("Opção inválida \n");
                     break;
@@ -104,7 +126,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                     break;
             }
             System.out.println("As escadas te levam ao segundo andar da biblioteca \n");
-            
+
         } while (resposta2 > 2 || resposta2 <= 0);
 
         int resposta3;
@@ -124,7 +146,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                     System.out.println("Mas vc pode se localizar por essas plaquinhas que há inicio de cada corredor \n");
                     System.out.println("Nos computadores você pode pesquisar se o seu livro está no acervo, lá também vai informa o corredor que ele estar \n");
                     Thread.sleep(3000);
-                    
+
                     System.out.println("Olhe para cima");
                     System.out.println("Gigante não é mesmo?");
                     System.out.println("Essa é a Vesica\nProvavelmente você ja ouvi falar sobre isso \n");
@@ -147,7 +169,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                             case 2:
                                 System.out.println("Muito bem, vamos em frente. \n");
                                 break;
-                            default :
+                            default:
                                 System.out.println("Opção Inválida");
                                 break;
                         }
@@ -163,8 +185,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
         } while (resposta3 > 2 || resposta3 <= 0);
 
     }
-        
-   
+
     static void predio1(String[] args) throws InterruptedException {
         int resposta1;
         int resposta2;
@@ -172,7 +193,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
         System.out.println("Esse espaço você deve conhecer bem\n");
         System.out.println("Aqui é o espaço dos laboratórios, no qual temos nossas aulas\n");
         System.out.println("Temos o Corredor A e o Corredor C \n");
-        
+
         do {
             System.out.println("Qual corredor você deseja ir ? \n1 - Para corredor A \n2 - Para corredor C");
             resposta1 = lerEntradaInt(input);
@@ -199,7 +220,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                     Thread.sleep(3000);
 
                     do {
-                          resposta2 = lerEntradaInt(input);
+                        resposta2 = lerEntradaInt(input);
                         switch (resposta2) {
                             case 1:
                                 System.out.println("-----Reconstrução dos 18 fingurinos e dança do BALLET TRIÁDICO----- \n");
@@ -233,11 +254,11 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
                     break;
             }
         } while (resposta1 > 2 || resposta1 <= 0);
-  
+
     }
 
     static void centroEsportivo(String[] args) throws InterruptedException {
-        System.out.println("-------Centro Esportivo--------");
+        System.out.println("------------------------------Centro Esportivo---------------------------------------");
         System.out.println("É aqui que você pode vir praticar algumas atividades físicas");
         System.out.println("E até se tornar um atleta do SENAC");
         System.out.println("A nossa direita temos a academia onde você pode manter sua forma física");
@@ -253,36 +274,35 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
     static void lanchonete(String[] args) throws InterruptedException {
         int resposta1;
         Scanner input = new Scanner(System.in);
-        System.out.println("-------------Bem vindo a lanchonete--------------\n");
-        System.out.println("Aqui é onde você vai comer seu lanchinho ");
+        System.out.println("-------------Bem vindo a Lanchonete--------------\n");
+        System.out.println("Aqui é onde você vai comer seu lanchinho (:");
         System.out.println("Aqui támbem temos alguns jogos: Tênis de Mesa; Pebolim ");
         System.out.println("Vamos jogar ? \n");
-  
-        
-        do{
+
+        do {
             System.out.println("1-Para jogar\n2-Para NÃO jogar");
             resposta1 = lerEntradaInt(input);
             System.out.println("");
-            switch(resposta1){
-                
+            switch (resposta1) {
+
                 case 1:
-                    
-            System.out.println("Você é um bom adversário...");
-            System.out.println("Uouuu, bom saque!! ");
-            System.out.println("Você está se saindo bem para uma primeira vez, deveria entrar para a *KAPIVA* ");
-            System.out.println("----------------------------------------------------------------------------------------------");
-            Thread.sleep(3000);
-            break;
-                case 2 :
-                    
-            System.out.println("Você pode jogar a qualquer momento, basta dar uma passadinha aqui \n");
-                break;
-                
-                default :
+
+                    System.out.println("Você é um bom adversário...");
+                    System.out.println("Uouuu, bom saque!! ");
+                    System.out.println("Você está se saindo bem para uma primeira vez, deveria entrar para a *KAPIVA* ");
+                    System.out.println("----------------------------------------------------------------------------------------------");
+                    Thread.sleep(3000);
+                    break;
+                case 2:
+
+                    System.out.println("Você pode jogar a qualquer momento, basta dar uma passadinha aqui \n");
+                    break;
+
+                default:
                     System.out.println("Opção Inválida");
                     break;
             }
-        }while(resposta1 > 2 || resposta1 <= 0);
+        } while (resposta1 > 2 || resposta1 <= 0);
     }
 
 }
