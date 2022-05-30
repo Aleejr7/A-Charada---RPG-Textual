@@ -6,6 +6,7 @@ public class jogo_textual {
 
     public static void main(String[] args) throws InterruptedException {
         Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner (System.in);
         String nome;
         System.out.println("|----------------------------------|");
         System.out.println("|                                  |");
@@ -88,10 +89,10 @@ public class jogo_textual {
             System.out.println("Digite 3 para ver os Créditos");
             System.out.println("Digite 4 para sair \n");
 
-            System.out.println("Digite um numero: ");
-            int entrada = input.nextInt();
+            
+            int entrada = cenarios.lerEntradaInt(sc);
             System.out.println("");
-
+            
             switch (entrada) {
                 case 1:
                     System.out.println(nome + " é um aluno desinteressado nos estudos, até que um dia sua familia resolve cobra-lo para começar a estudar.");
@@ -107,7 +108,7 @@ public class jogo_textual {
                     int contador = 1;
 
                     // CHARADAS
-                    while (contador < 5) {
+                    while (contador < 7) {
                         switch (contador) {
                             case 1:
                                 System.out.println("-------------------------------------Charada------------------------------------------------------------------------\n");
@@ -146,6 +147,19 @@ public class jogo_textual {
                                 System.out.println("--------------------------------------------------------------------------------------------------------------------");
                                 Thread.sleep(3000);
                                 break;
+                            case 5:
+                                System.out.println("-------------------------------------Charada------------------------------------------------------------------------\n");
+                                System.out.println("   |Uma arvore sem raizes, um discurso sem som, uma espinha sem ossos. ");
+                                System.out.println("   |O que eu sou?");
+                                System.out.println("--------------------------------------------------------------------------------------------------------------------");
+                                Thread.sleep(3000);
+                                break;
+                            case 6:
+                                System.out.println("-------------------------------------Charada------------------------------------------------------------------------\n");
+                                System.out.println("   |O que aconteceu quando o Super-Homem morreu? rs ");
+                                System.out.println("--------------------------------------------------------------------------------------------------------------------");
+                                Thread.sleep(3000);
+                                break;
                         }
 
                         // RESPONDER A CHARADA OU USAR O ESPAÇO SENAC
@@ -157,8 +171,8 @@ public class jogo_textual {
                         System.out.println("Digite 4 para ir ao CentroEsportivo");
                         System.out.println("Digite 5 para ir a Lanchonete");
                         System.out.println("Digite 6 para responder a charada \n");
-                        System.out.println("Digite um numero:");
-                        int alter = input.nextInt();
+                        
+                        int alter = cenarios.lerEntradaInt(sc);
                         System.out.println("");
 
                         switch (alter) {
@@ -215,6 +229,26 @@ public class jogo_textual {
 
                                 } else if (contador == 4) {
                                     if (resposta.toLowerCase().equals("kapiva")) {
+                                        System.out.println("");
+                                        Thread.sleep(2000);
+                                        contador++;
+                                        break;
+                                    } else {
+                                        System.out.println("*******Resposta errada!*********");
+                                        Thread.sleep(2000);
+                                    }
+                                } else if (contador == 5) {
+                                    if (resposta.toLowerCase().equals("livro")) {
+                                        System.out.println("");
+                                        Thread.sleep(2000);
+                                        contador++;
+                                        break;
+                                    } else {
+                                        System.out.println("*******Resposta errada!*********");
+                                        Thread.sleep(2000);
+                                    }
+                                } else if (contador == 6) {
+                                    if (resposta.toLowerCase().equals("o lex ficou de luthor")) {
                                         System.out.println("");
                                         Thread.sleep(2000);
                                         contador++;

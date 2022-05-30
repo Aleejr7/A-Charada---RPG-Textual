@@ -11,12 +11,14 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
         do {
             System.out.println("Digite valor numérico: ");
             try {
+                
                 String valorStr = entrada.nextLine();
                 int valor = Integer.parseInt(valorStr);
                 return valor;
             } catch (NumberFormatException ex) {
                 System.out.print("Valor inválido. ");
-            }
+            } 
+            
         } while (true);
     }
 
