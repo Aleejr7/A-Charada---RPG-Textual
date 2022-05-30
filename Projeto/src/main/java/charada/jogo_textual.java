@@ -156,7 +156,7 @@ public class jogo_textual {
                                 break;
                             case 6:
                                 System.out.println("-------------------------------------Charada------------------------------------------------------------------------\n");
-                                System.out.println("   |O que aconteceu quando o Super-Homem morreu? rs ");
+                                System.out.println("   |Como fica o inimigo do Superman depois da morte dele? rs ");
                                 System.out.println("--------------------------------------------------------------------------------------------------------------------");
                                 Thread.sleep(3000);
                                 break;
@@ -203,6 +203,7 @@ public class jogo_textual {
                                     } else {
                                         System.out.println("*******Resposta errada!*********");
                                         Thread.sleep(2000);
+                                        break;
                                     }
 
                                 } else if (contador == 2) {
@@ -214,6 +215,7 @@ public class jogo_textual {
                                     } else {
                                         System.out.println("*******Resposta errada!*********");
                                         Thread.sleep(2000);
+                                        break;
                                     }
 
                                 } else if (contador == 3) {
@@ -225,10 +227,12 @@ public class jogo_textual {
                                     } else {
                                         System.out.println("*******Resposta errada!*********");
                                         Thread.sleep(2000);
+                                        break;
                                     }
 
                                 } else if (contador == 4) {
                                     if (resposta.toLowerCase().equals("kapiva")) {
+                                        System.out.println("Resposta correta, você irá ser direcionado a próxima charada\n");
                                         System.out.println("");
                                         Thread.sleep(2000);
                                         contador++;
@@ -236,9 +240,11 @@ public class jogo_textual {
                                     } else {
                                         System.out.println("*******Resposta errada!*********");
                                         Thread.sleep(2000);
+                                        break;
                                     }
                                 } else if (contador == 5) {
                                     if (resposta.toLowerCase().equals("livro")) {
+                                       System.out.println("Resposta correta, você irá ser direcionado a próxima charada\n");
                                         System.out.println("");
                                         Thread.sleep(2000);
                                         contador++;
@@ -246,16 +252,19 @@ public class jogo_textual {
                                     } else {
                                         System.out.println("*******Resposta errada!*********");
                                         Thread.sleep(2000);
+                                        break;
                                     }
                                 } else if (contador == 6) {
-                                    if (resposta.toLowerCase().equals("o lex ficou de luthor")) {
+                                    if (resposta.toLowerCase().equals("deluthor")) {
                                         System.out.println("");
                                         Thread.sleep(2000);
                                         contador++;
                                         break;
                                     } else {
                                         System.out.println("*******Resposta errada!*********");
+                                        System.out.println("Não pode ter espaço entre as palavras!!!!!");
                                         Thread.sleep(2000);
+                                        break;
                                     }
                                 }
                             default:
@@ -275,11 +284,13 @@ public class jogo_textual {
                             + "\n"
                             + "2 - Coloque em pratica seu raciocinio lógico.\n"
                             + "\n"
-                            + "3 - Preste atenção em cada detalhe, pois vai fazer diferença.\n"
+                            + "3 - Preste atenção em cada detalhe, pois vai fazer a diferença.\n"
                             + "\n"
                             + "4 - Todos nossos cenarios foram pesquisados diretamente dentro do Centro universitario Senac.\n"
                             + "\n"
-                            + "5 - As respostas podem ser escritas em maiúsculo ou minúsculo \n");
+                            + "5 - As respostas podem ser escritas em maiúsculo ou minúsculo. \n"
+                            +"\n"
+                            + "6 - Se sua resposta houver mais de uma palavra, não utilizar o espaço entre elas.\n");
                     Thread.sleep(3000);
                     break;
 
