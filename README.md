@@ -4,7 +4,7 @@
 
 Cada charada foi desenvolvida envolvendo estatuas, locais, quadros, etc.. que estão dentro do Centro Universitário Senac.
 
-**Desenvolvidores:**
+**Desenvolvedores:**
 - Alesandro Rocha
 - Augusto Brito
 - Brenno Lima
