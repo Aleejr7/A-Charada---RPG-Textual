@@ -24,9 +24,9 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
 
     static void entrada() throws InterruptedException {
         Scanner input = new Scanner(System.in);
-        System.out.println("Você está na entrada do Senac, esta é vista 360º do local");
+        System.out.println("Você está na entrada do Senac, esta é a vista 360º do local");
         System.out.println("A sua direita você tem o Estacionamento e uma grande árvore, com alguns bancos embaixo");
-        System.out.println("A sua esquerda você tem a grande bliblioteca do senac e a obra de Elisa Bracher, a qual não foi atribuído um título.\n");
+        System.out.println("A sua esquerda você tem a grande bliblioteca do senac e a obra de 'Elisa Bracher', a qual não foi atribuído um título.\n");
         int resposta;
         do {
 
@@ -37,11 +37,11 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
             switch (resposta) {
                 case (1):
                     System.out.println("Uma obra de arte que consite em quatro troncos de árvore; como não há título denominamos 'MUTIlADOS' ");
-                    System.out.println("Ao olharmos para obra, é possivel farzer uma ligação instântanea ao desmatamento");
+                    System.out.println("Ao olharmos para obra, é possivel fazer uma ligação instântanea ao desmatamento");
                     System.out.println("E por mais que a madeira ainda seja utilizado como matéria prima para confecção de livros, cadernos, móveis e etc...");
                     System.out.println("É uma pratica inaceitável nos dias atuais \n  ");
                     Thread.sleep(3000);
-                    System.out.println("-----------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("--------------------------------------------------------------------------------------------------------------------\n");
                     break;
                 case (2):
                     System.out.println("Ok, vamos em fente!!");
@@ -62,7 +62,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
         System.out.println("Na entrada temos a obra 'GINASTA SENTADO'\n");
 
         do {
-            System.out.println("sicronizar com o GINASTA SENTADO?");
+            System.out.println("sicronizar com o 'GINASTA SENTADO?'");
             System.out.println("1-Para Sicronizar\n2-Para NÃO Sicronizar\n");
             resposta1 = lerEntradaInt(input);
             System.out.println("");
@@ -70,7 +70,7 @@ public class cenarios {//entrada de dados para ler somente valor númerico OBS: 
             switch (resposta1) {
 
                 case 1:
-                    System.out.println("Uma obra produzida em 2006 pelo Autor Veríssimo \n");
+                    System.out.println("Uma obra produzida em 2006 pelo Autor 'Veríssimo' \n");
                     System.out.println("A obra 'GINASTA SENATADO' consiste basicamente em um homem sentado em posição de reflexão e ao seu lado alguns livros. \n");
                     System.out.println("'Uma mente que não se exercita é como um atleta que não treina'. \n");
                     System.out.println("----------------------------------------------------------------------------------------------");

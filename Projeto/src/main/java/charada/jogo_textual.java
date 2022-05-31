@@ -167,8 +167,8 @@ public class jogo_textual {
                         System.out.println("*Dica: use o espaço do SENAC \n");
                         System.out.println("Digite 1 para ir a Entrada");
                         System.out.println("Digite 2 para ir a Biblioteca");
-                        System.out.println("Digite 3 para ir ao Predio1");
-                        System.out.println("Digite 4 para ir ao CentroEsportivo");
+                        System.out.println("Digite 3 para ir ao Predio 1");
+                        System.out.println("Digite 4 para ir ao Centro Esportivo");
                         System.out.println("Digite 5 para ir a Lanchonete");
                         System.out.println("Digite 6 para responder a charada \n");
                         
