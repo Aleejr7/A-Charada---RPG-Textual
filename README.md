@@ -1,8 +1,12 @@
-# **A charada**  (Projeto Integrador - RPG Textual)
+# **A charada**  (RPG Textual) 
 
-**_" A charada "_** é um jogo de RPG Textual focado em charadas relacionadas ao Centro Universitário Senac.
+Projeto do 1° Semestre de Análise e Desenvolvimento de Sistemas
 
-Cada charada foi desenvolvida envolvendo estatuas, locais, quadros, etc.. que estão dentro do Centro Universitário Senac.
+**_" A charada "_** é um jogo de RPG Textual focado em charadas relacionadas ao campus do Centro Universitário Senac.
+
+Intencionado para o desenvolvimento da lógica de programação.
+- Linguagem Java (Programação estruturada).
+- Programa executado no próprio terminal da IDE.
 
 **Desenvolvedores:**
 - Alesandro Rocha
